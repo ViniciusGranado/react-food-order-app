@@ -4,13 +4,13 @@ import { HeaderCardButton } from '../../Layout/HeaderCardButton/HeaderCardButton
 import mealsImage from '../../../assets/meals.jpg';
 import styles from './Header.module.css';
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <>
       <header className={styles.header}>
         <h1>ReactMeals</h1>
 
-        <HeaderCardButton />
+        <HeaderCardButton onClick={props.onShowCart}/>
       </header>
 
       <div className={styles['main-image']}>
