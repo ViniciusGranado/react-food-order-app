@@ -9,6 +9,7 @@ export const CartProvider = (props) => {
   const removeItemToCartHandler = (item) => {
     
   }
+
   const cartContext = {
     items: [],
     totalAmount: 0,

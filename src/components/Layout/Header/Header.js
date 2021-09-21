@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderCardButton } from '../../Layout/HeaderCardButton/HeaderCardButton';
+import { HeaderCartButton } from '../../Layout/HeaderCartButton/HeaderCartButton';
 
 import mealsImage from '../../../assets/meals.jpg';
 import styles from './Header.module.css';
@@ -10,7 +10,7 @@ export const Header = (props) => {
       <header className={styles.header}>
         <h1>ReactMeals</h1>
 
-        <HeaderCardButton onClick={props.onShowCart}/>
+        <HeaderCartButton onClick={props.onShowCart}/>
       </header>
 
       <div className={styles['main-image']}>
