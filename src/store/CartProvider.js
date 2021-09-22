@@ -18,8 +18,8 @@ export const CartProvider = (props) => {
   };
 
   return (
-    <CartContext value={cartContext}>
+    <CartContext.Provider value={cartContext}>
       {props.children}
-    </CartContext>
+    </CartContext.Provider>
   );
 };
